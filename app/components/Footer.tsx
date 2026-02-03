@@ -23,9 +23,9 @@ export default function Footer() {
                 </p>
                 <Link
                     className="inline-block px-10 py-4 border border-serene-cream/30 text-serene-cream uppercase tracking-[0.2em] hover:bg-serene-cream hover:text-serene-dark transition-all duration-300 mb-16"
-                    href="mailto:xinran.zhong@pku.edu.cn"
+                    href="mailto:2361521894@qq.com"
                 >
-                    xinran.zhong@pku.edu.cn
+                    2361521894@qq.com
                 </Link>
                 <div className="flex gap-8 mb-16">
                     <Link
@@ -48,7 +48,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div className="text-xs text-serene-cream/40 font-body uppercase tracking-widest">
-                    © 2024 Zhong Xinran. Designed with Serenity.
+                    © 2026 ChloEee0924. Designed with Serenity.
                 </div>
             </div>
         </footer>
