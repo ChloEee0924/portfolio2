@@ -76,7 +76,7 @@ export default function Home() {
                                     className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                                     style={{
                                         backgroundImage:
-                                            "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAt0tiUd0lbYTS00t1b0TuQeYLeEtAxtfpL4ZASJTQEov3JnEj432wUeQHePQS4XlmfAIM62jc_z3vGqfI-NCM8XmhSyhVSlrCHLzSKjqo7adJhZF_Vjl49f_5VWisULo_VjmoGY_uObgbJvKCHrvFSZAz6rG_cBLy_e77Qv2wS3Z1dEU0j_8OYenE7JMt6lV2Jwznq3YLH5WYVPcKtBRuE8hyaYWnwfYbqfqbw2mOmcbOqUKnT2uiDRbuE30net6s-Rz3vIKmyWgG6')",
+                                            "url('/hero-bg.jpg')",
                                         filter: "saturate(0.8) contrast(1.1)",
                                     }}
                                 ></div>
@@ -153,7 +153,7 @@ export default function Home() {
                                     <img
                                         alt="Zhong Xinran Portrait"
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 mix-blend-normal"
-                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Y-lOnaKwEqaqiyiLrRgSLnn_gEQ4WiJ-sewSaJr9Jm73r2SWBl9pvji7hBqMzfS7sKBio32u3FRqI_lSbTR4683XZuzGiaGydKpOpJXczl-sptGfLsuaNgEkXwDccpOL3IZoIklyGvnxjdLTvUrXVBZO6nNWFy07z3VmZXg4l-ex1ZTkbfv1Qw5LOK2uLCvpPqWRGABGWSxCeRK1RJ1wuSndmp0IHUk1ZOnh7TIcbvwmJeaP4mW3I9ig_3mUKofiiuN-cK9SJjiU"
+                                        src="/me.jpg"
                                     />
                                     <div className="absolute inset-0 bg-serene-green/10 mix-blend-multiply"></div>
                                 </div>
