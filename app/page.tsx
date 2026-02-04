@@ -295,14 +295,14 @@ export default function Home() {
                                 <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-serene-green rounded-full border-4 border-white shadow-sm -translate-x-[7px] md:-translate-x-1/2 mt-1 z-10"></div>
                                 <div className="w-full md:w-1/2 md:pl-12 order-3 md:order-2">
                                     <span className="font-heading text-serene-dark/40 italic">
-                                        Jun 2023 - Sep 2023
+                                        Sep 2025 - Dec 2025
                                     </span>
                                 </div>
                             </div>
                             <div className="flex flex-col md:flex-row gap-8 items-start relative">
                                 <div className="w-full md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
                                     <span className="font-heading text-serene-dark/40 italic">
-                                        Jan 2022 - Mar 2022
+                                        Jul 2024 - Dec 2024
                                     </span>
                                 </div>
                                 <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-serene-sage rounded-full border-4 border-white shadow-sm -translate-x-[7px] md:-translate-x-1/2 mt-1 z-10"></div>

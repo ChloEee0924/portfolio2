@@ -1,6 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Footer() {
+    const [showWeChat, setShowWeChat] = useState(false);
+    const [showRed, setShowRed] = useState(false);
+    const [showNumber, setShowNumber] = useState(false);
+    const [showCopied, setShowCopied] = useState(false);
+
+    const handleCopyEmail = () => {
+        navigator.clipboard.writeText("2361521894@qq.com");
+        setShowCopied(true);
+        setTimeout(() => setShowCopied(false), 2000);
+    };
+
     return (
         <footer
             className="bg-serene-dark text-serene-cream py-24 relative overflow-hidden"
@@ -21,36 +35,134 @@ export default function Footer() {
                     Open to AI Product Management opportunities. Let&apos;s discuss how we
                     can build serene, intelligent futures.
                 </p>
-                <Link
-                    className="inline-block px-10 py-4 border border-serene-cream/30 text-serene-cream uppercase tracking-[0.2em] hover:bg-serene-cream hover:text-serene-dark transition-all duration-300 mb-16"
-                    href="mailto:2361521894@qq.com"
+                <button
+                    onClick={handleCopyEmail}
+                    className="inline-block px-10 py-4 border border-serene-cream/30 text-serene-cream uppercase tracking-[0.2em] hover:bg-serene-cream hover:text-serene-dark transition-all duration-300 mb-16 cursor-pointer"
                 >
                     2361521894@qq.com
-                </Link>
+                </button>
                 <div className="flex gap-8 mb-16">
-                    <Link
-                        className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest"
-                        href="#"
+                    <button
+                        onClick={() => setShowWeChat(true)}
+                        className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest cursor-pointer"
                     >
                         WeChat
-                    </Link>
-                    <Link
-                        className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest"
-                        href="#"
+                    </button>
+                    <button
+                        onClick={() => setShowNumber(true)}
+                        className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest cursor-pointer"
                     >
-                        Bilibili
-                    </Link>
-                    <Link
-                        className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest"
-                        href="#"
+                        Number
+                    </button>
+                    <button
+                        onClick={() => setShowRed(true)}
+                        className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest cursor-pointer"
                     >
-                        Lofter
-                    </Link>
+                        Red
+                    </button>
                 </div>
                 <div className="text-xs text-serene-cream/40 font-body uppercase tracking-widest">
                     © 2026 ChloEee0924. Designed with Serenity.
                 </div>
             </div>
+
+            {/* Copy Success Toast */}
+            {showCopied && (
+                <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50 animate-bounce">
+                    <div className="bg-serene-green text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3">
+                        <span className="material-symbols-outlined text-sm">check_circle</span>
+                        <span className="text-sm font-medium tracking-wide uppercase">Email Copied</span>
+                    </div>
+                </div>
+            )}
+
+            {/* WeChat QR Modal */}
+            {showWeChat && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+                    onClick={() => setShowWeChat(false)}
+                >
+                    <div
+                        className="bg-white p-6 rounded-2xl shadow-2xl max-w-sm w-full text-center transform transition-all scale-100"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <h3 className="font-display text-2xl text-serene-dark mb-4">
+                            WeChat
+                        </h3>
+                        <div className="aspect-square bg-serene-sand/20 rounded-xl mb-4 overflow-hidden border border-serene-dark/10">
+                            {/* User needs to add wechat-qr.jpg to public folder */}
+                            <img
+                                src="/wechat-qr.jpg"
+                                alt="WeChat QR Code"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <p className="font-heading text-serene-dark text-lg font-bold select-all">
+                            WeChat ID: 19835992143
+                        </p>
+                        <p className="text-sm text-serene-dark/50 mt-1">
+                            Scan code or search ID
+                        </p>
+                    </div>
+                </div>
+            )}
+
+            {/* Number Modal */}
+            {showNumber && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+                    onClick={() => setShowNumber(false)}
+                >
+                    <div
+                        className="bg-white p-10 rounded-2xl shadow-2xl max-w-sm w-full text-center transform transition-all scale-100"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <span className="material-symbols-outlined text-5xl text-serene-green mb-6">
+                            call
+                        </span>
+                        <h3 className="font-display text-2xl text-serene-dark mb-2">
+                            Phone Number
+                        </h3>
+                        <p className="font-heading text-serene-dark text-xl font-bold select-all mb-4">
+                            +86 198 3599 2143
+                        </p>
+                        <p className="text-sm text-serene-dark/50">
+                            Feel free to contact me
+                        </p>
+                    </div>
+                </div>
+            )}
+
+            {/* Red (Xiaohongshu) QR Modal */}
+            {showRed && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4"
+                    onClick={() => setShowRed(false)}
+                >
+                    <div
+                        className="bg-white p-6 rounded-2xl shadow-2xl max-w-sm w-full text-center transform transition-all scale-100"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <h3 className="font-display text-2xl text-serene-dark mb-4">
+                            RED
+                        </h3>
+                        <div className="aspect-square bg-serene-sand/20 rounded-xl mb-4 overflow-hidden border border-serene-dark/10">
+                            {/* User needs to add red-qr.jpg to public folder */}
+                            <img
+                                src="/red-qr.jpg"
+                                alt="Red QR Code"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                        <p className="font-heading text-serene-dark text-lg font-bold select-all">
+                            Chloe_xr
+                        </p>
+                        <p className="text-sm text-serene-dark/50 mt-1">
+                            Scan to follow
+                        </p>
+                    </div>
+                </div>
+            )}
         </footer>
     );
 }
