@@ -16,7 +16,7 @@ export default function Navbar() {
                     className="text-2xl font-display font-semibold tracking-widest text-serene-dark"
                     href="/"
                 >
-                    ZHONG XINRAN
+                    ChloEee Zhong
                 </Link>
                 <div className="hidden md:flex gap-8 items-center">
                     <Link
