@@ -1,13 +1,18 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
+import Link from "next/link";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../data/locales";
 
 export default function Footer() {
     const [showWeChat, setShowWeChat] = useState(false);
     const [showRed, setShowRed] = useState(false);
     const [showNumber, setShowNumber] = useState(false);
     const [showCopied, setShowCopied] = useState(false);
+
+    const { language } = useLanguage();
+    const t = translations[language].footer;
 
     const handleCopyEmail = () => {
         navigator.clipboard.writeText("2361521894@qq.com");
@@ -29,11 +34,10 @@ export default function Footer() {
             ></div>
             <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center relative z-10">
                 <h2 className="font-display text-5xl md:text-7xl mb-8 tracking-tight">
-                    Let&apos;s Connect
+                    {t.title}
                 </h2>
                 <p className="font-heading text-xl text-serene-sage mb-12 italic max-w-2xl">
-                    Open to AI Product Management opportunities. Let&apos;s discuss how we
-                    can build serene, intelligent futures.
+                    {t.subtitle}
                 </p>
                 <button
                     onClick={handleCopyEmail}
@@ -62,7 +66,7 @@ export default function Footer() {
                     </button>
                 </div>
                 <div className="text-xs text-serene-cream/40 font-body uppercase tracking-widest">
-                    © 2026 ChloEee0924. Designed with Serenity.
+                    © 2026 ChloEee0924. {t.copy}
                 </div>
             </div>
 
@@ -101,7 +105,7 @@ export default function Footer() {
                             WeChat ID: 19835992143
                         </p>
                         <p className="text-sm text-serene-dark/50 mt-1">
-                            Scan code or search ID
+                            {t.scan}
                         </p>
                     </div>
                 </div>
@@ -127,7 +131,7 @@ export default function Footer() {
                             +86 198 3599 2143
                         </p>
                         <p className="text-sm text-serene-dark/50">
-                            Feel free to contact me
+                            {t.contact_me}
                         </p>
                     </div>
                 </div>
@@ -158,7 +162,7 @@ export default function Footer() {
                             Chloe_xr
                         </p>
                         <p className="text-sm text-serene-dark/50 mt-1">
-                            Scan to follow
+                            {t.scan_follow}
                         </p>
                     </div>
                 </div>
