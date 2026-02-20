@@ -129,19 +129,19 @@ export default function Home() {
                         {[1, 2, 3, 4].map((i) => (
                             <span key={i} className="inline-flex items-center mx-6">
                                 <span className="text-lavender-light font-display tracking-[0.2em] text-sm md:text-base font-semibold">
-                                    GPA 3.72/4.00
+                                    {t.hero.ticker.gpa}
                                 </span>
                                 <span className="mx-6 text-serene-green text-xs">●</span>
                                 <span className="text-lavender-light font-display tracking-[0.2em] text-sm md:text-base font-semibold">
-                                    NATIONAL SCHOLARSHIP RECIPIENT
+                                    {t.hero.ticker.scholarship}
                                 </span>
                                 <span className="mx-6 text-serene-green text-xs">●</span>
                                 <span className="text-lavender-light font-display tracking-[0.2em] text-sm md:text-base font-semibold">
-                                    PEKING UNIVERSITY 2026
+                                    {t.hero.ticker.school}
                                 </span>
                                 <span className="mx-6 text-serene-green text-xs">●</span>
                                 <span className="text-lavender-light font-display tracking-[0.2em] text-sm md:text-base font-semibold">
-                                    1.5M+ READS
+                                    {t.hero.ticker.reads}
                                 </span>
                                 <span className="mx-6 text-serene-green text-xs">●</span>
                             </span>
@@ -167,14 +167,12 @@ export default function Home() {
                                     format_quote
                                 </span>
                                 <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl leading-tight mb-8">
-                                    &quot;I don&apos;t just design products; I architect systems
-                                    where data, spatial understanding, and user needs converge
-                                    into seamless experiences.&quot;
+                                    {t.hero.quote.text}
                                 </h2>
                                 <div className="flex items-center gap-4">
                                     <span className="h-px w-12 bg-serene-sage/40"></span>
                                     <p className="font-body text-serene-sage uppercase tracking-widest text-sm font-medium">
-                                        Cross-disciplinary Synthesis
+                                        {t.hero.quote.label}
                                     </p>
                                 </div>
                             </div>

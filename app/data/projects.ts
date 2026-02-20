@@ -1,3 +1,9 @@
+export interface ProjectLink {
+    title: string;
+    title_zh: string;
+    url: string;
+}
+
 export interface Project {
     id: string;
     slug: string;
@@ -14,30 +20,53 @@ export interface Project {
     role: string;
     role_zh: string;
     tools: string[];
+    links?: ProjectLink[];
 }
 
 export const projects: Project[] = [
     {
         id: "1",
-        slug: "ai-design-evaluation",
-        title: "AI Design Evaluation",
-        title_zh: "AI 设计评估系统",
+        slug: "yile-community-landscape-renewal-and-elderly-friendly-community-operation",
+        title: "Yile Community Landscape Renewal and Elderly-Friendly Community Operation",
+        title_zh: "怡乐社区景观更新与适老化社区运营",
         summary:
-            "Intelligent scoring systems for interior design solutions. B-end product optimization.",
-        summary_zh: "针对室内设计方案的智能评分系统，B端产品优化。",
+            "Age-friendly design for Yile Community's active aging goals, applying five-senses healing principles.",
+        summary_zh: "针对怡乐社区的积极老龄化目标，运用五感疗愈原理进行的适老化设计。",
         fullDescription:
-            "This project focuses on creating an intelligent scoring system for interior design solutions aimed at B-end product optimization. By leveraging AI algorithms, we analyze design layouts, color harmony, and functional efficiency to provide real-time feedback to designers. This not only speeds up the design process but also ensures high-quality output that meets industry standards.",
-        fullDescription_zh: "本项目专注于为室内设计方案创建智能评分系统，旨在优化B端产品。通过利用AI算法，我们分析设计布局、色彩和谐度和功能效率，为设计师提供实时反馈。这不仅加快了设计过程，还确保了符合行业标准的高质量输出。",
-        tags: ["Kujiale Internship", "Optimization"],
+            "This project focuses on age-friendly design targeting the active aging goals of Yile Community, utilizing principles of five-senses healing. The design scope encompasses the community's physical landscape and includes an operations manual for the community's Five-Senses Garden. Additionally, an app prototype was designed for this operational model to assist residents, while providing community managers with real-time demographic data and aging insights.",
+        fullDescription_zh: "本项目是针对怡乐社区的积极老龄化目标，运用五感疗愈原理进行的适老化设计。设计内容包括社区的物理景观，也包含了对于社区五感花园的运营手册。同时针对这种运营模式设计了一款小程序原型，辅助满足C端用户的各种需求，为社区管理者提供社区人口数据并帮助管理者及时了解老龄化现状。",
+        tags: ["Landscape Renewal", "Elderly-Friendly Community Operation Design", "App Design"],
         coverImage:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuBQHSZSOhWcNDyyptmn3gg8YAc6hOepPbJ86ZAwWpmCQCnbYsVa-9-zNV1nI87Mt7KGwLGcLSv7X56v8uMfjo1lsFstJEVbmMU5laCsaOM-Fhy23Srg1B_fM5Jkva0quGWXnFyHGqiPtByK7p_VemDB_coY87sCAprkFaOp-9WrnpIU4_zX6FjZ0eT61xMJvNmjpU77lPthKPCN_R9K0pW5C1-vfMftLI-3LsMd3xzFAv9H-eSAO1se-UeChoClr2Xi30eSG1w6KQEc",
+            "/project/yile/cover.jpg",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuBQHSZSOhWcNDyyptmn3gg8YAc6hOepPbJ86ZAwWpmCQCnbYsVa-9-zNV1nI87Mt7KGwLGcLSv7X56v8uMfjo1lsFstJEVbmMU5laCsaOM-Fhy23Srg1B_fM5Jkva0quGWXnFyHGqiPtByK7p_VemDB_coY87sCAprkFaOp-9WrnpIU4_zX6FjZ0eT61xMJvNmjpU77lPthKPCN_R9K0pW5C1-vfMftLI-3LsMd3xzFAv9H-eSAO1se-UeChoClr2Xi30eSG1w6KQEc",
+            "/project/yile/cover.jpg", "/project/yile/detail1.jpg", "/project/yile/detail2.jpg"
         ],
-        year: "2023",
-        role: "AI Product Intern",
-        role_zh: "AI 产品实习生",
-        tools: ["Python", "SQL", "Figma"],
+        year: "2025",
+        role: "Landscape Architecture / Yile Community Operation / Mini Program Design",
+        role_zh: "景观建筑设计 / 社区运营设计 / 小程序设计",
+        tools: ["Rhino", "CAD", "PS", "Google Antigravity"],
+        links: [
+            {
+                title: "Five-Senses Garden Operation Manual",
+                title_zh: "五感花园运营手册",
+                url: "#",
+            },
+            {
+                title: "Yile Community Mini Program Prototype",
+                title_zh: "怡乐家园小程序原型",
+                url: "https://yile-home-v1.pages.dev/",
+            },
+            {
+                title: "Yile Community Mini Program PRD",
+                title_zh: "怡乐家园小程序PRD",
+                url: "#",
+            },
+            {
+                title: "Detailed Design Document",
+                title_zh: "设计内容详细文本",
+                url: "#",
+            },
+        ],
     },
     {
         id: "2",

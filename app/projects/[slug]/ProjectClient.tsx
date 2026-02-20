@@ -99,8 +99,33 @@ export default function ProjectClient({ project }: { project: Project }) {
                         </p>
                     </div>
 
+                    {/* Project Links */}
+                    {project.links && project.links.length > 0 && (
+                        <div className="mb-24">
+                            <h3 className="font-display text-2xl text-serene-dark mb-8">
+                                {language === 'zh' ? '相关文档' : 'Related Documents'}
+                            </h3>
+                            <div className="flex flex-wrap gap-4">
+                                {project.links.map((link, i) => (
+                                    <a
+                                        key={i}
+                                        href={link.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-6 py-3 border border-serene-dark/20 rounded-full text-serene-dark text-sm hover:border-serene-dark hover:bg-serene-dark/5 transition-all duration-300"
+                                    >
+                                        <span className="material-symbols-outlined text-serene-sage text-[18px]">
+                                            description
+                                        </span>
+                                        {language === 'zh' ? link.title_zh : link.title}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
                     {/* Gallery */}
-                    {project.images.length > 0 && (
+                    {project.images && project.images.length > 0 && (
                         <div className="space-y-12">
                             <h3 className="font-display text-3xl text-serene-dark text-center mb-12">
                                 {t.visuals}
