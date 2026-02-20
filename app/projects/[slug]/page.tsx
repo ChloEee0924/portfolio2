@@ -1,9 +1,8 @@
 import { projects } from "../../data/projects";
-import ProjectDetails from "../../components/ProjectDetails";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import { notFound } from "next/navigation";
+import ProjectClient from "./ProjectClient";
 
-// Generate static params for all project routes
+// Generate static params for all projects
 export async function generateStaticParams() {
     return projects.map((project) => ({
         slug: project.slug,
@@ -16,12 +15,11 @@ export default async function ProjectPage({
     params: Promise<{ slug: string }>;
 }) {
     const { slug } = await params;
+    const project = projects.find((p) => p.slug === slug);
 
-    return (
-        <>
-            <Navbar />
-            <ProjectDetails slug={slug} />
-            <Footer />
-        </>
-    );
+    if (!project) {
+        notFound();
+    }
+
+    return <ProjectClient project={project} />;
 }

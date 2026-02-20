@@ -6,8 +6,8 @@ type Language = "en" | "zh";
 
 interface LanguageContextType {
     language: Language;
-    toggleLanguage: () => void;
     setLanguage: (lang: Language) => void;
+    toggleLanguage: () => void;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -15,31 +15,25 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export function LanguageProvider({ children }: { children: ReactNode }) {
     const [language, setLanguage] = useState<Language>("en");
 
-    // Persist language preference
+    // Load saved language preference on mount
     useEffect(() => {
         const savedLang = localStorage.getItem("language") as Language;
-        if (savedLang) {
+        if (savedLang && (savedLang === "en" || savedLang === "zh")) {
             setLanguage(savedLang);
         }
     }, []);
 
-    const toggleLanguage = () => {
-        const newLang = language === "en" ? "zh" : "en";
-        setLanguage(newLang);
-        localStorage.setItem("language", newLang);
+    const handleSetLanguage = (lang: Language) => {
+        setLanguage(lang);
+        localStorage.setItem("language", lang);
     };
 
-    const value = {
-        language,
-        toggleLanguage,
-        setLanguage: (lang: Language) => {
-            setLanguage(lang);
-            localStorage.setItem("language", lang);
-        },
+    const toggleLanguage = () => {
+        handleSetLanguage(language === "en" ? "zh" : "en");
     };
 
     return (
-        <LanguageContext.Provider value={value}>
+        <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, toggleLanguage }}>
             {children}
         </LanguageContext.Provider>
     );

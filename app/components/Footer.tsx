@@ -1,18 +1,17 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../data/locales";
 
 export default function Footer() {
+    const { language } = useLanguage();
+    const t = translations[language].footer;
     const [showWeChat, setShowWeChat] = useState(false);
     const [showRed, setShowRed] = useState(false);
     const [showNumber, setShowNumber] = useState(false);
     const [showCopied, setShowCopied] = useState(false);
-
-    const { language } = useLanguage();
-    const t = translations[language].footer;
 
     const handleCopyEmail = () => {
         navigator.clipboard.writeText("2361521894@qq.com");
@@ -50,23 +49,32 @@ export default function Footer() {
                         onClick={() => setShowWeChat(true)}
                         className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest cursor-pointer"
                     >
-                        WeChat
+                        {
+                            // "wechat_btn" was added to locales
+                            t.wechat_btn
+                        }
                     </button>
                     <button
                         onClick={() => setShowNumber(true)}
                         className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest cursor-pointer"
                     >
-                        Number
+                        {
+                            // "phone_btn" was added to locales
+                            t.phone_btn
+                        }
                     </button>
                     <button
                         onClick={() => setShowRed(true)}
                         className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest cursor-pointer"
                     >
-                        Red
+                        {
+                            // "red_btn" was added to locales
+                            t.red_btn
+                        }
                     </button>
                 </div>
                 <div className="text-xs text-serene-cream/40 font-body uppercase tracking-widest">
-                    © 2026 ChloEee0924. {t.copy}
+                    {t.rights}
                 </div>
             </div>
 
@@ -75,7 +83,9 @@ export default function Footer() {
                 <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 z-50 animate-bounce">
                     <div className="bg-serene-green text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3">
                         <span className="material-symbols-outlined text-sm">check_circle</span>
-                        <span className="text-sm font-medium tracking-wide uppercase">Email Copied</span>
+                        <span className="text-sm font-medium tracking-wide uppercase">
+                            {t.email_copied}
+                        </span>
                     </div>
                 </div>
             )}
@@ -105,7 +115,7 @@ export default function Footer() {
                             WeChat ID: 19835992143
                         </p>
                         <p className="text-sm text-serene-dark/50 mt-1">
-                            {t.scan}
+                            {t.wechat_scan}
                         </p>
                     </div>
                 </div>
@@ -131,7 +141,7 @@ export default function Footer() {
                             +86 198 3599 2143
                         </p>
                         <p className="text-sm text-serene-dark/50">
-                            {t.contact_me}
+                            {t.phone_desc}
                         </p>
                     </div>
                 </div>
@@ -162,7 +172,7 @@ export default function Footer() {
                             Chloe_xr
                         </p>
                         <p className="text-sm text-serene-dark/50 mt-1">
-                            {t.scan_follow}
+                            {t.red_scan}
                         </p>
                     </div>
                 </div>
