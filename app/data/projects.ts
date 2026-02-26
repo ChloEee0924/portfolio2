@@ -49,7 +49,7 @@ export const projects: Project[] = [
             {
                 title: "Five-Senses Garden Operation Manual",
                 title_zh: "五感花园运营手册",
-                url: "#",
+                url: "/project/yile/怡乐五感补给手册.pdf",
             },
             {
                 title: "Yile Community Mini Program Prototype",
@@ -59,12 +59,12 @@ export const projects: Project[] = [
             {
                 title: "Yile Community Mini Program PRD",
                 title_zh: "怡乐家园小程序PRD",
-                url: "#",
+                url: "/project/yile/怡乐五感社区微信小程序 PRD.pdf",
             },
             {
                 title: "Detailed Design Document",
                 title_zh: "设计内容详细文本",
-                url: "#",
+                url: "/project/yile/最新课程改造与社区运营设计（获得社区负责人认可）.pdf",
             },
         ],
     },
