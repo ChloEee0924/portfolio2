@@ -49,7 +49,7 @@ export const projects: Project[] = [
             {
                 title: "Five-Senses Garden Operation Manual",
                 title_zh: "五感花园运营手册",
-                url: "/project/yile/怡乐五感补给手册.pdf",
+                url: "/project/yile/怡乐五感补给手册_compressed.pdf",
             },
             {
                 title: "Yile Community Mini Program Prototype",
