@@ -93,10 +93,10 @@ export default function ProjectClient({ project }: { project: Project }) {
                     </div>
 
                     {/* Main Content */}
-                    <div className="prose prose-lg text-serene-dark/80 font-body max-w-none mb-24">
-                        <p className="whitespace-pre-line leading-relaxed text-lg">
+                    <div className="prose prose-lg text-serene-dark/80 font-body max-w-none mb-24 text-lg">
+                        <div className="whitespace-pre-line leading-relaxed">
                             {language === 'zh' ? project.fullDescription_zh : project.fullDescription}
-                        </p>
+                        </div>
                     </div>
 
                     {/* Project Links */}

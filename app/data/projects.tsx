@@ -11,8 +11,8 @@ export interface Project {
     title_zh: string;
     summary: string;
     summary_zh: string;
-    fullDescription: string;
-    fullDescription_zh: string;
+    fullDescription: React.ReactNode;
+    fullDescription_zh: React.ReactNode;
     tags: string[];
     coverImage: string;
     images: string[];
@@ -32,9 +32,36 @@ export const projects: Project[] = [
         summary:
             "Age-friendly design for Yile Community's active aging goals, applying five-senses healing principles.",
         summary_zh: "针对怡乐社区的积极老龄化目标，运用五感疗愈原理进行的适老化设计。",
-        fullDescription:
-            "This project focuses on age-friendly design targeting the active aging goals of Yile Community, utilizing principles of five-senses healing. The design scope encompasses the community's physical landscape and includes an operations manual for the community's Five-Senses Garden. Additionally, an app prototype was designed for this operational model to assist residents, while providing community managers with real-time demographic data and aging insights.",
-        fullDescription_zh: "本项目是针对怡乐社区的积极老龄化目标，运用五感疗愈原理进行的适老化设计。设计内容包括社区的物理景观，也包含了对于社区五感花园的运营手册。同时针对这种运营模式设计了一款小程序原型，辅助满足C端用户的各种需求，为社区管理者提供社区人口数据并帮助管理者及时了解老龄化现状。",
+        fullDescription: (
+            <div className="space-y-6">
+                <p>This project focuses on age-friendly design targeting the active aging goals of Yile Community, utilizing principles of <strong>five-senses healing</strong>.</p>
+                <div className="pl-4 border-l-2 border-serene-dark/20 text-serene-dark/70 my-4">
+                    The design scope encompasses both the community's physical landscape and a comprehensive operations manual for the Five-Senses Garden.
+                </div>
+                <h4 className="font-bold text-serene-dark text-xl mt-6">Key Contributions:</h4>
+                <ul className="list-disc pl-6 space-y-2">
+                    <li>Landscape architectural design for active aging.</li>
+                    <li>Development of the Five-Senses Garden operation guidelines.</li>
+                    <li>Design of a Mini Program app prototype for C-end residents.</li>
+                    <li>Providing real-time demographic data and aging insights for community managers.</li>
+                </ul>
+            </div>
+        ),
+        fullDescription_zh: (
+            <div className="space-y-6">
+                <p>本项目是针对怡乐社区的积极老龄化目标，运用<strong>五感疗愈原理</strong>进行的适老化设计。</p>
+                <div className="pl-4 border-l-2 border-serene-dark/20 text-serene-dark/70 my-4">
+                    设计内容不仅包括社区的物理环境景观改造，也包含了针对社区五感花园的详细运营手册。
+                </div>
+                <h4 className="font-bold text-serene-dark text-xl mt-6">核心产出包含：</h4>
+                <ul className="list-disc pl-6 space-y-2">
+                    <li>基于积极老龄化理念的景观建筑设计。</li>
+                    <li>社区运营设计与补给手册编写。</li>
+                    <li>怡乐家园微信小程序（C端）APP原型设计，辅助满足用户各项需求。</li>
+                    <li>管理端数据看板设计，帮助管理者及时掌握人口老龄化相关数据现状。</li>
+                </ul>
+            </div>
+        ),
         tags: ["Landscape Renewal", "Elderly-Friendly Community Operation Design", "App Design"],
         coverImage:
             "/project/yile/cover.jpg",
