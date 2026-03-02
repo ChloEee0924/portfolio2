@@ -197,22 +197,201 @@ export const projects: Project[] = [
     },
     {
         id: "2",
-        slug: "urban-data-science",
-        title: "Urban Data Science",
-        title_zh: "城市数据科学",
+        slug: "kujiale-ai-design-platform-operation",
+        title: "Kujiale AI Intelligent Design Platform Operation",
+        title_zh: "酷家乐 AI 智能设计平台运营",
         summary:
-            "Spatial pattern analysis using big data methodologies and SQL. Research on urban dynamics.",
-        summary_zh: "使用大数据方法论和SQL进行空间模式分析。城市动态研究。",
-        fullDescription:
-            "In this research project, we explored spatial pattern analysis using big data methodologies. Utilizing SQL for data handling and advanced statistical models, we analyzed urban dynamics to understand traffic flows, population distribution, and resource allocation. The insights generated help in better urban planning and policy-making.",
-        fullDescription_zh: "在这个研究项目中，我们探索了使用大数据方法论的空间模式分析。利用SQL进行数据处理和高级统计模型，我们分析了城市动态，以了解交通流量、人口分布和资源配置。产生的见解有助于更好的城市规划和政策制定。",
-        tags: ["Research", "Big Data"],
-        coverImage: "", // Will use gradient in component if empty
-        images: [],
-        year: "2023",
-        role: "Researcher",
-        role_zh: "研究员",
-        tools: ["SQL", "ArcGIS", "Python"],
+            "Built a high-quality AI business knowledge base and drove algorithm iterations for Oppein's AI intelligent design platform.",
+        summary_zh: "酷家乐为泛家居行业头部客户交付大模型平台，负责搭建高质量 AI 业务知识库并驱动底层核心算法迭代。",
+        fullDescription: (
+            <div className="space-y-8 mt-2">
+                <p className="text-lg text-serene-dark/90 font-medium leading-relaxed">
+                    Kujiale is delivering a brand-new AI intelligent design platform for a leading B-end client (Oppein) in the home furnishing industry. This project required deep algorithm refinement and experience optimization to ensure commercial deployment standards. Here is a review of the core work using the STAR method:
+                </p>
+
+                <div className="grid gap-6">
+                    {/* Situation */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Situation</span>
+                            <h4 className="font-bold text-serene-dark text-lg">Context & Background</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>Commercial Standardization:</strong> Kujiale is delivering a brand-new AI intelligent design platform for a leading B-end client (Oppein). To ensure the AI-generated interior design solutions meet commercial deployment standards, it requires not only massive underlying data support but also deep algorithm refinement and experience optimization for actual business scenarios.</li>
+                        </ul>
+                    </div>
+
+                    {/* Task */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Task</span>
+                            <h4 className="font-bold text-serene-dark text-lg">Objectives</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>Knowledge Base & Quality Assurance:</strong> As an AI Product Operator, the core objective is to build a high-quality AI business knowledge base and, through large-scale stress testing and use-case troubleshooting, identify blind spots in the AI generation logic, driving the R&D team's iteration to ensure extremely high commercial usability.</li>
+                        </ul>
+                    </div>
+
+                    {/* Action */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Action</span>
+                            <h4 className="font-bold text-serene-dark text-lg">Strategy & Execution</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80 leading-relaxed">
+                            <li><strong>"Feeding" AI & Building Rule Engine:</strong> Processed over 5,000 interior hardware model data from scratch, assigned precise attribute tags, and deeply studied prompt composition. Configured over 100 sets of spatial rule templates for different styles, providing clear learning samples for the AI algorithm.</li>
+                            <li><strong>"User Advocate" Limit Testing:</strong> Went beyond routine testing by introducing over 300 sets of real floor plans of varying sizes and cross-verifying them against over 10 design styles.</li>
+                            <li><strong>Cross-departmental Collaboration & Definition:</strong> Systematically categorized scattered bugs found during testing (such as "light overexposure", "model collision", "rendering perspective distortion") into over 20 product optimization requirement work orders. Communicated closely with the R&D team to promote the upgrade of underlying rendering logic and layout algorithms.</li>
+                        </ul>
+                    </div>
+
+                    {/* Result */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Result</span>
+                            <h4 className="font-bold text-serene-dark text-lg">Outcomes</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>Data Richness:</strong> Established a standardized tag retrieval and model configuration system, significantly enhancing the data richness of the AI platform.</li>
+                            <li><strong>Quality Delivery:</strong> Through the implementation of over 20 key optimization suggestions, significantly reduced the "manual secondary modification rate" of AI solutions, ensuring the smooth delivery and high-standard launch of the Oppein AI intelligent design platform.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* AI Generation Quality Module */}
+                <div className="pt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                    {/* Left Column: Visuals */}
+                    <div className="flex flex-col gap-10">
+                        <div className="flex flex-col">
+                            <img src="/project/kujiale/对比示意图.png" alt="Before & After Comparison" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Visual Verification: Before & After Comparison</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <img src="/project/kujiale/质量验收.png" alt="Testing & Optimization Workflow" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Business Driven: Testing & Optimization Workflow</p>
+                        </div>
+                    </div>
+
+                    {/* Right Column: Data & Summary */}
+                    <div className="flex flex-col gap-10">
+                        {/* Chart Image Placeholder */}
+                        <div className="flex flex-col">
+                            <img src="/project/kujiale/数据漏斗图.png" alt="Data Funnel" className="block w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover bg-white" />
+                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Data Funnel: Optimization Process</p>
+                        </div>
+
+                        {/* Text Summary */}
+                        <div>
+                            <h3 className="text-2xl font-bold text-serene-dark mb-2">AI Generation Quality & Experience Optimization</h3>
+                            <p className="text-base text-serene-dark/70 font-medium mb-6">Distilling common issues from chaotic test phenomena to control the final commercial delivery quality.</p>
+                            <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
+                                <li><strong>Boundary Stress Testing:</strong> Executed cross-validation on 300+ complex real-world layouts and 10+ core styles.</li>
+                                <li><strong>Distilling Common Rules:</strong> Pinpointed AI generation blind spots like light overexposure and model collision.</li>
+                                <li><strong>Driving R&D Iteration:</strong> Delivered 20+ high-priority optimization proposals, ensuring commercial deployment for Oppein.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ),
+        fullDescription_zh: (
+            <div className="space-y-8 mt-2">
+                <p className="text-lg text-serene-dark/90 font-medium leading-relaxed">
+                    酷家乐正在为泛家居行业头部 B 端客户（欧派）交付全新的 AI 智能设计平台。以下是该项目核心工作的 STAR 工作总结：
+                </p>
+
+                <div className="grid gap-6">
+                    {/* Situation */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Situation</span>
+                            <h4 className="font-bold text-serene-dark text-lg">项目背景</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>商业化交付挑战：</strong>酷家乐正在为泛家居行业头部 B 端客户（欧派）交付全新的 AI 智能设计平台。为了确保 AI 生成的室内设计方案能够达到商业落地的标准，不仅需要海量的底层数据支撑，还需要针对实际业务场景进行深度的算法打磨与体验优化。</li>
+                        </ul>
+                    </div>
+
+                    {/* Task */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Task</span>
+                            <h4 className="font-bold text-serene-dark text-lg">核心目标</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>构建库与极限排查：</strong>作为 AI 产品运营，核心目标是搭建高质量的 AI 业务知识库，并通过大规模的压力测试与用例排查，找出 AI 生成逻辑中的盲区，驱动产研团队迭代，保障最终交付的系统具备极高的商业可用性。</li>
+                        </ul>
+                    </div>
+
+                    {/* Action */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Action</span>
+                            <h4 className="font-bold text-serene-dark text-lg">行动策略</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80 leading-relaxed">
+                            <li><strong>“喂养” AI，构建规则引擎：</strong>从 0 到 1 处理了 5000+ 室内硬件模型数据，为其打上精准的属性标签，并深入研究提示词（Prompt）构成。同时，配置了 100+ 套不同风格的空间规则模板，为 AI 算法提供了清晰的学习样本。</li>
+                            <li><strong>充当“用户代言人”进行极限测试：</strong>不局限于常规测试，而是引入了 300+ 套包含大中小真实户型，对 10+ 种设计风格进行交叉验证。</li>
+                            <li><strong>跨部门协同与产品定义：</strong>将测试中发现的“灯光过曝”、“模型穿模”、“渲染视角畸变”等零散 Bug，体系化地归纳为 20+ 产品优化需求工单，与研发团队紧密沟通，推动底层渲染逻辑与布局算法的升级。</li>
+                        </ul>
+                    </div>
+
+                    {/* Result */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Result</span>
+                            <h4 className="font-bold text-serene-dark text-lg">业务成果</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>资产与标签化：</strong>建立了一套标准化的标签检索与模型配置体系，大幅提升了 AI 平台的数据丰富度。</li>
+                            <li><strong>高标准交付：</strong>通过 20+ 项关键优化建议的落地，显著降低了 AI 方案的“人工二次修改率”，保障了欧派 AI 智能设计平台的顺利交付与高标准上线。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* AI Generation Quality Module */}
+                <div className="pt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                    {/* Left Column: Visuals */}
+                    <div className="flex flex-col gap-10">
+                        <div className="flex flex-col">
+                            <img src="/project/kujiale/对比示意图.png" alt="前后效果对比" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">视觉验证：前后效果对比</p>
+                        </div>
+                        <div className="flex flex-col">
+                            <img src="/project/kujiale/质量验收.png" alt="测试与优化工作流" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">业务驱动：测试与优化工作流</p>
+                        </div>
+                    </div>
+
+                    {/* Right Column: Data & Summary */}
+                    <div className="flex flex-col gap-10">
+                        {/* Chart Image Placeholder */}
+                        <div className="flex flex-col">
+                            <img src="/project/kujiale/数据漏斗图.png" alt="数据漏斗图" className="block w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover bg-white" />
+                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">量化漏斗：提炼与优化过程</p>
+                        </div>
+
+                        {/* Text Summary */}
+                        <div>
+                            <h3 className="text-2xl font-bold text-serene-dark mb-2">AI 生成质量验收与体验优化</h3>
+                            <p className="text-base text-serene-dark/70 font-medium mb-6">从海量杂乱的测试现象中提炼共性问题，把控 AI 最终交付质量。</p>
+                            <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
+                                <li><strong>边界压力测试：</strong>执行 300+ 复杂户型、10+ 核心风格交叉验证。</li>
+                                <li><strong>提炼共性规则：</strong>精确定位光影过曝、模型穿模等 AI 生成盲区。</li>
+                                <li><strong>驱动产研迭代：</strong>输出 20+ 项高优产品优化提案，保障大客户（欧派）商业化落地。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ),
+        tags: ["AI Platform", "Product Operation", "AIGC", "Data Tagging", "Agile Testing"],
+        coverImage: "/project/kujiale/detail1.jpg", // Will use gradient in component if empty
+        images: ["/project/kujiale/detail1.jpg", "/project/kujiale/detail2.jpg", "/project/kujiale/detail3.jpg", "/project/kujiale/detail4.jpg", "/project/kujiale/detail5.jpg"],
+        year: "2025",
+        role: "AI Product Operator",
+        role_zh: "AI 客户产品运营实习生",
+        tools: ["Coohom", "3dmax", "Excel", "Support Ticket System"],
     },
     {
         id: "3",
@@ -222,9 +401,112 @@ export const projects: Project[] = [
         summary:
             "Computer Vision applications for analyzing urban street quality and walkability.",
         summary_zh: "计算机视觉在分析城市街道质量和步行友好度中的应用。",
-        fullDescription:
-            "This project applies Computer Vision techniques to analyze urban street quality and walkability. By processing thousands of street-view images, we assess factors like greenery, pavement quality, and building aesthetics. The goal is to provide data-driven recommendations for improving urban walkability and livability.",
-        fullDescription_zh: "本项目应用计算机视觉技术来分析城市街道质量和步行友好度。通过处理成千上万的街景图像，我们评估绿化、路面质量和建筑美学等因素。目标是为改善城市步行友好度和宜居性提供数据驱动的建议。",
+        fullDescription: (
+            <div className="space-y-8 mt-2">
+                <p className="text-lg text-serene-dark/90 font-medium leading-relaxed">
+                    This project applies Computer Vision techniques to analyze urban street quality and walkability. By processing thousands of street-view images, we assess factors like greenery, pavement quality, and building aesthetics. The goal is to provide data-driven recommendations for improving urban walkability and livability.
+                </p>
+
+                <div className="grid gap-6">
+                    {/* Situation */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Situation</span>
+                            <h4 className="font-bold text-serene-dark text-lg">Context & Background</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>Background:</strong> [Insert background context here]</li>
+                        </ul>
+                    </div>
+
+                    {/* Task */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Task</span>
+                            <h4 className="font-bold text-serene-dark text-lg">Objectives</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>Objectives:</strong> [Insert key objectives here]</li>
+                        </ul>
+                    </div>
+
+                    {/* Action */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Action</span>
+                            <h4 className="font-bold text-serene-dark text-lg">Strategy & Execution</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80 leading-relaxed">
+                            <li><strong>Execution:</strong> [Insert action and execution details here]</li>
+                        </ul>
+                    </div>
+
+                    {/* Result */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Result</span>
+                            <h4 className="font-bold text-serene-dark text-lg">Outcomes</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>Outcomes:</strong> [Insert outcomes here]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        ),
+        fullDescription_zh: (
+            <div className="space-y-8 mt-2">
+                <p className="text-lg text-serene-dark/90 font-medium leading-relaxed">
+                    本项目应用计算机视觉技术来分析城市街道质量和步行友好度。通过处理成千上万的街景图像，我们评估绿化、路面质量和建筑美学等因素。目标是为改善城市步行友好度和宜居性提供数据驱动的建议。
+                </p>
+
+                <div className="grid gap-6">
+                    {/* Situation */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Situation</span>
+                            <h4 className="font-bold text-serene-dark text-lg">情境与背景</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>背景：</strong> [在此处插入背景内容]</li>
+                        </ul>
+                    </div>
+
+                    {/* Task */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Task</span>
+                            <h4 className="font-bold text-serene-dark text-lg">任务与目标</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>目标：</strong> [在此处插入任务目标内容]</li>
+                        </ul>
+                    </div>
+
+                    {/* Action */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Action</span>
+                            <h4 className="font-bold text-serene-dark text-lg">行动与执行</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80 leading-relaxed">
+                            <li><strong>执行：</strong> [在此处插入行动与执行内容]</li>
+                        </ul>
+                    </div>
+
+                    {/* Result */}
+                    <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
+                        <div className="flex flex-wrap items-center gap-3 mb-4">
+                            <span className="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Result</span>
+                            <h4 className="font-bold text-serene-dark text-lg">结果与成效</h4>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
+                            <li><strong>成效：</strong> [在此处插入结果与成效内容]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        ),
         tags: ["Computer Vision", "Urban Analysis"],
         coverImage:
             "https://lh3.googleusercontent.com/aida-public/AB6AXuAdtEVKu4Vz4mgtIFga_9O0cDYYMP8JaUBCIWjCgjz04LtsG8QEJHhDSqPEAg8LYczGqzyOebrNkr84l7mWxsLHVqVXtX6WzzjuxzYqLIPfRp7rRc6sZQJpp5hSxwenxpjnq5zwnlYi9GIweYqDSpssbh8DQFDo_9RkHjkg84I9hjLOY4b5kCr7G9FKb6xFynKTjyrCbqYzjM0Z3xai4T_WpSkiAYbyyHoQzezZWM2bsWPJ6bWqPh3UuOIXJtBkrj5PgLHLAceNIxUv",

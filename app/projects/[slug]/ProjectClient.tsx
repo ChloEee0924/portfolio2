@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -11,6 +12,20 @@ export default function ProjectClient({ project }: { project: Project }) {
     const { language } = useLanguage();
     const t = translations[language].project;
 
+    // Carousel logic
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const heroImages = project.images && project.images.length > 0
+        ? project.images
+        : (project.coverImage ? [project.coverImage] : []);
+
+    useEffect(() => {
+        if (heroImages.length <= 1) return;
+        const timer = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+        }, 4000);
+        return () => clearInterval(timer);
+    }, [heroImages.length]);
+
     return (
         <>
             <Navbar />
@@ -18,13 +33,19 @@ export default function ProjectClient({ project }: { project: Project }) {
                 {/* Hero Section */}
                 <section className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden flex items-end">
                     <div className="absolute inset-0 z-0">
-                        {project.coverImage ? (
-                            <div
-                                className="w-full h-full bg-cover bg-center"
-                                style={{
-                                    backgroundImage: `url('${project.coverImage}')`,
-                                }}
-                            />
+                        {heroImages.length > 0 ? (
+                            heroImages.map((img, index) => (
+                                <div
+                                    key={index}
+                                    className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                                        }`}
+                                >
+                                    <div
+                                        className="w-full h-full bg-cover bg-center"
+                                        style={{ backgroundImage: `url('${img}')` }}
+                                    />
+                                </div>
+                            ))
                         ) : (
                             <div
                                 className="w-full h-full bg-cover bg-center"
@@ -35,6 +56,21 @@ export default function ProjectClient({ project }: { project: Project }) {
                             />
                         )}
                         <div className="absolute inset-0 bg-gradient-to-t from-serene-dark/90 via-serene-dark/40 to-transparent"></div>
+
+                        {/* Carousel Indicators */}
+                        {heroImages.length > 1 && (
+                            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+                                {heroImages.map((_, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => setCurrentSlide(index)}
+                                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-white scale-125' : 'bg-white/40 hover:bg-white/80'
+                                            }`}
+                                        aria-label={`Go to slide ${index + 1}`}
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
                     <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 w-full text-serene-cream">
                         <Link
@@ -121,27 +157,6 @@ export default function ProjectClient({ project }: { project: Project }) {
                                     </a>
                                 ))}
                             </div>
-                        </div>
-                    )}
-
-                    {/* Gallery */}
-                    {project.images && project.images.length > 0 && (
-                        <div className="space-y-12">
-                            <h3 className="font-display text-3xl text-serene-dark text-center mb-12">
-                                {t.visuals}
-                            </h3>
-                            {project.images.map((img, i) => (
-                                <div
-                                    key={i}
-                                    className="relative w-full aspect-video rounded-sm overflow-hidden shadow-lg border border-serene-dark/5"
-                                >
-                                    <img
-                                        src={img}
-                                        alt={`${project.title} - View ${i + 1}`}
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                            ))}
                         </div>
                     )}
 
