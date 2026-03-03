@@ -1,3 +1,5 @@
+import Mermaid from "../components/Mermaid";
+
 export interface ProjectLink {
     title: string;
     title_zh: string;
@@ -259,37 +261,58 @@ export const projects: Project[] = [
                 </div>
 
                 {/* AI Generation Quality Module */}
-                <div className="pt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <div className="pt-8 space-y-12">
+                    {/* Full Width Image: Before & After */}
+                    <div className="flex flex-col">
+                        <img src="/project/kujiale/对比示意图.png" alt="Before & After Comparison" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                        <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Visual Verification: Before & After Comparison</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                        {/* Left Column: Workflow & Funnel Visuals */}
+                        <div className="flex flex-col gap-10">
+                            <div className="flex flex-col">
+                                <img src="/project/kujiale/质量验收.png" alt="Testing & Optimization Workflow" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                                <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Business Driven: Testing & Optimization Workflow</p>
+                            </div>
+                            <div className="flex flex-col">
+                                <img src="/project/kujiale/数据漏斗图.png" alt="Data Funnel" className="block w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover bg-white" />
+                                <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Data Funnel: Optimization Process</p>
+                            </div>
+                        </div>
+
+                        {/* Right Column: Text Summary */}
+                        <div className="flex flex-col justify-center h-full">
+                            <div>
+                                <h3 className="text-2xl font-bold text-serene-dark mb-2">AI Generation Quality & Experience Optimization</h3>
+                                <p className="text-base text-serene-dark/70 font-medium mb-6">Distilling common issues from chaotic test phenomena to control the final commercial delivery quality.</p>
+                                <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
+                                    <li><strong>Boundary Stress Testing:</strong> Executed cross-validation on 300+ complex real-world layouts and 10+ core styles.</li>
+                                    <li><strong>Distilling Common Rules:</strong> Pinpointed AI generation blind spots like light overexposure and model collision.</li>
+                                    <li><strong>Driving R&D Iteration:</strong> Delivered 20+ high-priority optimization proposals, ensuring commercial deployment for Oppein.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Module 2: AI Business Knowledge Base & Rules Engine */}
+                <div className="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start border-t border-serene-dark/5">
                     {/* Left Column: Visuals */}
-                    <div className="flex flex-col gap-10">
-                        <div className="flex flex-col">
-                            <img src="/project/kujiale/对比示意图.png" alt="Before & After Comparison" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
-                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Visual Verification: Before & After Comparison</p>
-                        </div>
-                        <div className="flex flex-col">
-                            <img src="/project/kujiale/质量验收.png" alt="Testing & Optimization Workflow" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
-                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Business Driven: Testing & Optimization Workflow</p>
-                        </div>
+                    <div className="flex flex-col">
+                        <img src="/project/kujiale/mindmap.png" alt="Architecture Deconstruction" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                        <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">🌿 Architecture Deconstruction: AI Underlying Spatial Rules & Style Topology</p>
                     </div>
 
                     {/* Right Column: Data & Summary */}
-                    <div className="flex flex-col gap-10">
-                        {/* Chart Image Placeholder */}
-                        <div className="flex flex-col">
-                            <img src="/project/kujiale/数据漏斗图.png" alt="Data Funnel" className="block w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover bg-white" />
-                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">Data Funnel: Optimization Process</p>
-                        </div>
-
-                        {/* Text Summary */}
-                        <div>
-                            <h3 className="text-2xl font-bold text-serene-dark mb-2">AI Generation Quality & Experience Optimization</h3>
-                            <p className="text-base text-serene-dark/70 font-medium mb-6">Distilling common issues from chaotic test phenomena to control the final commercial delivery quality.</p>
-                            <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
-                                <li><strong>Boundary Stress Testing:</strong> Executed cross-validation on 300+ complex real-world layouts and 10+ core styles.</li>
-                                <li><strong>Distilling Common Rules:</strong> Pinpointed AI generation blind spots like light overexposure and model collision.</li>
-                                <li><strong>Driving R&D Iteration:</strong> Delivered 20+ high-priority optimization proposals, ensuring commercial deployment for Oppein.</li>
-                            </ul>
-                        </div>
+                    <div className="flex flex-col justify-center h-full">
+                        <h3 className="text-2xl font-bold text-serene-dark mb-2">AI Business Knowledge Base & Rules Engine</h3>
+                        <p className="text-base text-serene-dark/70 font-medium mb-6">Discarding blind "building blocks", deeply understanding pan-home furnishing business logic, and establishing a scalable underlying rule base for AI.</p>
+                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
+                            <li><strong>Deconstructing Complex Business:</strong> Sorted out the real business scenarios of B-end enterprise (Oppein), translating the experience of senior designers into machine-readable configuration rules.</li>
+                            <li><strong>Building Underlying Knowledge Base:</strong> Independently completed system configuration of 100+ exclusive furniture combinations, fully covering core spaces like living room, dining room, bedroom, and study room.</li>
+                            <li><strong>Establishing Standardized Parameters:</strong> Finely defined the underlying logic of 3 core design styles, including hard furnishing component association, soft furnishing anti-collision, and circulation avoidance constraints.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -350,37 +373,58 @@ export const projects: Project[] = [
                 </div>
 
                 {/* AI Generation Quality Module */}
-                <div className="pt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <div className="pt-8 space-y-12">
+                    {/* Full Width Image: 前后对比 */}
+                    <div className="flex flex-col">
+                        <img src="/project/kujiale/对比示意图.png" alt="前后效果对比" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                        <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">视觉验证：前后效果对比</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                        {/* Left Column: Workflow & Funnel Visuals */}
+                        <div className="flex flex-col gap-10">
+                            <div className="flex flex-col">
+                                <img src="/project/kujiale/质量验收.png" alt="测试与优化工作流" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                                <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">业务驱动：测试与优化工作流</p>
+                            </div>
+                            <div className="flex flex-col">
+                                <img src="/project/kujiale/数据漏斗图.png" alt="数据漏斗图" className="block w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover bg-white" />
+                                <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">量化漏斗：提炼与优化过程</p>
+                            </div>
+                        </div>
+
+                        {/* Right Column: Text Summary */}
+                        <div className="flex flex-col justify-center h-full">
+                            <div>
+                                <h3 className="text-2xl font-bold text-serene-dark mb-2">AI 生成质量验收与体验优化</h3>
+                                <p className="text-base text-serene-dark/70 font-medium mb-6">从海量杂乱的测试现象中提炼共性问题，把控 AI 最终交付质量。</p>
+                                <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
+                                    <li><strong>边界压力测试：</strong>执行 300+ 复杂户型、10+ 核心风格交叉验证。</li>
+                                    <li><strong>提炼共性规则：</strong>精确定位光影过曝、模型穿模等 AI 生成盲区。</li>
+                                    <li><strong>驱动产研迭代：</strong>输出 20+ 项高优产品优化提案，保障大客户（欧派）商业化落地。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Module 2: AI Business Knowledge Base & Rules Engine (Chinese) */}
+                <div className="pt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start border-t border-serene-dark/5">
                     {/* Left Column: Visuals */}
-                    <div className="flex flex-col gap-10">
-                        <div className="flex flex-col">
-                            <img src="/project/kujiale/对比示意图.png" alt="前后效果对比" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
-                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">视觉验证：前后效果对比</p>
-                        </div>
-                        <div className="flex flex-col">
-                            <img src="/project/kujiale/质量验收.png" alt="测试与优化工作流" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
-                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">业务驱动：测试与优化工作流</p>
-                        </div>
+                    <div className="flex flex-col">
+                        <img src="/project/kujiale/平台逻辑.png" alt="架构解构" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                        <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">架构解构：AI 底层空间规则与风格拓扑图</p>
                     </div>
 
                     {/* Right Column: Data & Summary */}
-                    <div className="flex flex-col gap-10">
-                        {/* Chart Image Placeholder */}
-                        <div className="flex flex-col">
-                            <img src="/project/kujiale/数据漏斗图.png" alt="数据漏斗图" className="block w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover bg-white" />
-                            <p className="mt-4 text-sm text-serene-dark/60 text-center font-medium">量化漏斗：提炼与优化过程</p>
-                        </div>
-
-                        {/* Text Summary */}
-                        <div>
-                            <h3 className="text-2xl font-bold text-serene-dark mb-2">AI 生成质量验收与体验优化</h3>
-                            <p className="text-base text-serene-dark/70 font-medium mb-6">从海量杂乱的测试现象中提炼共性问题，把控 AI 最终交付质量。</p>
-                            <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
-                                <li><strong>边界压力测试：</strong>执行 300+ 复杂户型、10+ 核心风格交叉验证。</li>
-                                <li><strong>提炼共性规则：</strong>精确定位光影过曝、模型穿模等 AI 生成盲区。</li>
-                                <li><strong>驱动产研迭代：</strong>输出 20+ 项高优产品优化提案，保障大客户（欧派）商业化落地。</li>
-                            </ul>
-                        </div>
+                    <div className="flex flex-col justify-center h-full">
+                        <h3 className="text-2xl font-bold text-serene-dark mb-2">AI 业务知识库与规则引擎搭建</h3>
+                        <p className="text-base text-serene-dark/70 font-medium mb-6">摒弃盲目的“搭积木”，深刻理解泛家居业务逻辑，为 AI 建立可规模化复用的底层规则基座。</p>
+                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
+                            <li><strong>解构复杂业务：</strong>梳理 B 端客户（欧派）的真实业务场景，将资深设计师的经验转化为机器可读的配置规则。</li>
+                            <li><strong>搭建底层知识库：</strong>独立完成 100+ 套专属家具组合的系统配置，全方位覆盖客厅、餐厅、卧室、书房等核心空间。</li>
+                            <li><strong>建立标准化参数：</strong>精细定义 3 种核心设计风格下的底层逻辑，包括硬装组件关联、软装摆件防穿模以及动线避让约束。</li>
+                        </ul>
                     </div>
                 </div>
             </div>
