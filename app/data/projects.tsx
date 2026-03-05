@@ -315,6 +315,22 @@ export const projects: Project[] = [
                         </ul>
                     </div>
                 </div>
+
+                {/* Module 3: Scene Combination Strategy */}
+                <div className="pt-16 space-y-8 border-t border-serene-dark/5">
+                    <div className="w-full flex justify-center">
+                        <img src="/project/kujiale/placeholder_diagram.png" alt="Process Diagram Placeholder" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                    </div>
+
+                    <div className="max-w-4xl mx-auto flex flex-col justify-center">
+                        <h3 className="text-2xl font-bold text-serene-dark mb-4 text-center">Core Strategy: Scene Combination Asset Multiplication Based on "Core SKU Anchor"</h3>
+                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
+                            <li><strong>Establish Business Anchors:</strong> Deeply understand B-end business demands, taking Oppein's real selling products (specific sofas, dining tables, bed frames, desks) as the absolute core of scene generation (Anchor SKU).</li>
+                            <li><strong>Introduce Style Variable Engine:</strong> Deconstruct the abstract "style" into configurable accessory variables (e.g., modern minimalist geometric rugs, Italian luxury metal lamps).</li>
+                            <li><strong>Scale Data Asset Multiplication:</strong> Through the matrix configuration formula of "Core Anchor × Style Variable", successfully multiply a single product into 100+ plug-and-play AI combination libraries. Ensure that AI not only guarantees spatial aesthetics during automatic layout but also precisely drives the exposure and conversion of client-specified products.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         ),
         fullDescription_zh: (
@@ -424,6 +440,22 @@ export const projects: Project[] = [
                             <li><strong>解构复杂业务：</strong>梳理 B 端客户（欧派）的真实业务场景，将资深设计师的经验转化为机器可读的配置规则。</li>
                             <li><strong>搭建底层知识库：</strong>独立完成 100+ 套专属家具组合的系统配置，全方位覆盖客厅、餐厅、卧室、书房等核心空间。</li>
                             <li><strong>建立标准化参数：</strong>精细定义 3 种核心设计风格下的底层逻辑，包括硬装组件关联、软装摆件防穿模以及动线避让约束。</li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* Module 3: Scene Combination Strategy (Chinese) */}
+                <div className="pt-16 space-y-8 border-t border-serene-dark/5">
+                    <div className="w-full flex justify-center">
+                        <img src="/project/kujiale/placeholder_diagram.png" alt="流程图占位" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                    </div>
+
+                    <div className="max-w-4xl mx-auto flex flex-col justify-center">
+                        <h3 className="text-2xl font-bold text-serene-dark mb-4 text-center">核心策略：基于“核心 SKU 锚点”的场景组合资产繁衍</h3>
+                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
+                            <li><strong>确立商业锚点：</strong>深入理解 B 端业务诉求，以欧派强推的真实售卖商品（特定沙发、餐桌、床架、书桌）作为场景生成的绝对核心（Anchor SKU）。</li>
+                            <li><strong>引入风格变量引擎：</strong>将抽象的“风格”拆解为可配置的辅件变量（如现代简约的几何地毯、意式轻奢的金属灯具等）。</li>
+                            <li><strong>数据资产规模化繁衍：</strong>通过 核心锚点 × 风格变量 的矩阵式配置公式，成功将单一商品繁衍为 100+ 套即插即用的 AI 组合库。确保 AI 在自动布局时，既能保证空间美学，又能精准拉动客户指定商品的曝光与落地。</li>
                         </ul>
                     </div>
                 </div>
