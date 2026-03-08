@@ -71,7 +71,7 @@ export default function Navbar() {
             </div>
             {/* Mobile Menu Placeholder - Expandable if needed */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-serene-cream absolute w-full px-6 py-4 border-b border-serene-green/10 flex flex-col gap-4 shadow-lg">
+                <div className="md:hidden bg-serene-cream absolute left-0 top-full w-full px-6 py-4 border-b border-serene-green/10 flex flex-col gap-4 shadow-lg">
                     <Link href="/#about" onClick={() => setMobileMenuOpen(false)}>{t.about}</Link>
                     <Link href="/#work" onClick={() => setMobileMenuOpen(false)}>{t.projects}</Link>
                     <Link href="/#experience" onClick={() => setMobileMenuOpen(false)}>{t.experience}</Link>

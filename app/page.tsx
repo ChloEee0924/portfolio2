@@ -66,10 +66,10 @@ export default function Home() {
                         <span className="material-symbols-outlined text-serene-green/60 text-4xl mb-6">
                             spa
                         </span>
-                        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-serene-dark mb-6 leading-tight tracking-tight">
+                        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-serene-dark mb-6 leading-tight tracking-tight">
                             {t.hero.title}
                         </h1>
-                        <p className="font-heading text-xl md:text-2xl text-serene-dark/70 italic mb-12 max-w-2xl text-balance">
+                        <p className="font-heading text-lg md:text-xl lg:text-2xl text-serene-dark/70 italic mb-12 max-w-2xl text-balance">
                             {t.hero.subtitle}
                         </p>
                         <div className="relative w-64 h-80 md:w-80 md:h-96 mb-12 group">
@@ -86,8 +86,8 @@ export default function Home() {
                                 ></div>
                             </div>
                         </div>
-                        <div className="flex flex-col md:flex-row gap-8 text-center md:text-left items-center md:items-start border-t border-serene-dark/10 pt-8 mt-4">
-                            <div className="flex flex-col items-center md:items-start px-6">
+                        <div className="flex flex-col md:flex-row gap-6 md:gap-8 text-center md:text-left items-center md:items-start border-t border-serene-dark/10 pt-8 mt-4">
+                            <div className="flex flex-col items-center md:items-start px-4 md:px-6">
                                 <span className="text-xs font-bold uppercase tracking-widest text-serene-green mb-1">
                                     {t.hero.education_title}
                                 </span>
@@ -254,7 +254,9 @@ export default function Home() {
                         {/* View All Projects Button - Can be linked to a full archive later */}
                         <Link
                             className="group relative px-10 py-4 border border-serene-dark text-serene-dark font-display text-sm uppercase tracking-[0.2em] hover:bg-serene-dark hover:text-serene-cream transition-all duration-300 flex items-center gap-3"
-                            href="#"
+                            href="/project/portfolio.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <span className="relative z-10">{t.project.view_all}</span>
                             <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform duration-300 relative z-10">
@@ -280,8 +282,8 @@ export default function Home() {
                         </div>
                         <div className="space-y-12 relative">
                             <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-serene-dark/10 md:-translate-x-1/2"></div>
-                            <div className="flex flex-col md:flex-row gap-8 items-start relative">
-                                <div className="w-full md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
+                            <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-start relative">
+                                <div className="w-full pl-8 md:pl-0 md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
                                     <h3 className="font-display text-xl text-serene-dark font-bold">
                                         {t.experience.kujiale}
                                     </h3>
@@ -293,20 +295,20 @@ export default function Home() {
                                     </p>
                                 </div>
                                 <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-serene-green rounded-full border-4 border-white shadow-sm -translate-x-[7px] md:-translate-x-1/2 mt-1 z-10"></div>
-                                <div className="w-full md:w-1/2 md:pl-12 order-3 md:order-2">
-                                    <span className="font-heading text-serene-dark/40 italic">
+                                <div className="w-full pl-8 md:pl-0 md:w-1/2 md:pl-12 order-3 md:order-2">
+                                    <span className="font-heading text-serene-dark/40 italic text-sm md:text-base">
                                         {t.experience.kujiale_date}
                                     </span>
                                 </div>
                             </div>
-                            <div className="flex flex-col md:flex-row gap-8 items-start relative">
-                                <div className="w-full md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
-                                    <span className="font-heading text-serene-dark/40 italic">
+                            <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-start relative">
+                                <div className="w-full pl-8 md:pl-0 md:w-1/2 md:text-right md:pr-12 order-2 md:order-1">
+                                    <span className="font-heading text-serene-dark/40 italic text-sm md:text-base">
                                         {t.experience.cadg_date}
                                     </span>
                                 </div>
                                 <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-serene-sage rounded-full border-4 border-white shadow-sm -translate-x-[7px] md:-translate-x-1/2 mt-1 z-10"></div>
-                                <div className="w-full md:w-1/2 md:pl-12 order-3 md:order-2">
+                                <div className="w-full pl-8 md:pl-0 md:w-1/2 md:pl-12 order-3 md:order-2">
                                     <h3 className="font-display text-xl text-serene-dark font-bold">
                                         {t.experience.cadg}
                                     </h3>

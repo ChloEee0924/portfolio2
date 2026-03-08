@@ -282,7 +282,7 @@ export const projects: Project[] = [
                         </div>
 
                         {/* Right Column: Text Summary */}
-                        <div className="flex flex-col justify-center h-full">
+                        <div className="flex flex-col justify-start">
                             <div>
                                 <h3 className="text-2xl font-bold text-serene-dark mb-2">AI Generation Quality & Experience Optimization</h3>
                                 <p className="text-base text-serene-dark/70 font-medium mb-6">Distilling common issues from chaotic test phenomena to control the final commercial delivery quality.</p>
@@ -410,14 +410,14 @@ export const projects: Project[] = [
                         </div>
 
                         {/* Right Column: Text Summary */}
-                        <div className="flex flex-col justify-center h-full">
+                        <div className="flex flex-col justify-start">
                             <div>
-                                <h3 className="text-2xl font-bold text-serene-dark mb-2">AI 生成质量验收与体验优化</h3>
+                                <h3 className="text-2xl font-bold text-serene-dark mb-2">工作内容1：AI 生成质量验收与体验优化</h3>
                                 <p className="text-base text-serene-dark/70 font-medium mb-6">从海量杂乱的测试现象中提炼共性问题，把控 AI 最终交付质量。</p>
                                 <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
-                                    <li><strong>边界压力测试：</strong>执行 300+ 复杂户型、10+ 核心风格交叉验证。</li>
-                                    <li><strong>提炼共性规则：</strong>精确定位光影过曝、模型穿模等 AI 生成盲区。</li>
-                                    <li><strong>驱动产研迭代：</strong>输出 20+ 项高优产品优化提案，保障大客户（欧派）商业化落地。</li>
+                                    <li><strong>边界压力测试：</strong>突破常规测试的局限，深度覆盖 300+ 异形与复杂真实户型，并结合 10+ 种核心设计风格进行高强度的交叉验证。通过模拟 B 端客户极端的真实业务场景，全面探测并穷尽 AI 布局算法在不同空间尺度与物理环境下的生成边界。</li>
+                                    <li><strong>提炼共性规则：</strong>从海量杂乱的测试现象中，精准定位并分类“全局光影过曝”、“复杂承重墙模型穿模”、“软硬装尺寸冲突”等底层生成盲区，将零散的报错抽象为系统性的共性缺陷。</li>
+                                    <li><strong>驱动产研迭代：</strong>将业务痛点转化为高价值的产品需求，累计输出 20+ 项高优产品优化提案。推动底层渲染逻辑与空间避让机制的重构，最终保障了标杆大客户（欧派）AI 智能设计项目的“商业化高质量交付”与成功落地。</li>
                                 </ul>
                             </div>
                         </div>
@@ -434,7 +434,7 @@ export const projects: Project[] = [
 
                     {/* Right Column: Data & Summary */}
                     <div className="flex flex-col justify-center h-full">
-                        <h3 className="text-2xl font-bold text-serene-dark mb-2">AI 业务知识库与规则引擎搭建</h3>
+                        <h3 className="text-2xl font-bold text-serene-dark mb-2">工作内容2：AI 业务知识库与规则引擎搭建</h3>
                         <p className="text-base text-serene-dark/70 font-medium mb-6">摒弃盲目的“搭积木”，深刻理解泛家居业务逻辑，为 AI 建立可规模化复用的底层规则基座。</p>
                         <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
                             <li><strong>解构复杂业务：</strong>梳理 B 端客户（欧派）的真实业务场景，将资深设计师的经验转化为机器可读的配置规则。</li>
@@ -447,15 +447,35 @@ export const projects: Project[] = [
                 {/* Module 3: Scene Combination Strategy (Chinese) */}
                 <div className="pt-16 space-y-8 border-t border-serene-dark/5">
                     <div className="w-full flex justify-center">
-                        <img src="/project/kujiale/placeholder_diagram.png" alt="流程图占位" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
+                        <img src="/project/kujiale/项目内容.png" alt="流程图占位" className="w-full h-auto rounded-xl shadow-sm border border-serene-dark/10 object-cover" />
                     </div>
 
                     <div className="max-w-4xl mx-auto flex flex-col justify-center">
                         <h3 className="text-2xl font-bold text-serene-dark mb-4 text-center">核心策略：基于“核心 SKU 锚点”的场景组合资产繁衍</h3>
                         <ul className="list-disc pl-5 space-y-3 text-serene-dark/80">
-                            <li><strong>确立商业锚点：</strong>深入理解 B 端业务诉求，以欧派强推的真实售卖商品（特定沙发、餐桌、床架、书桌）作为场景生成的绝对核心（Anchor SKU）。</li>
-                            <li><strong>引入风格变量引擎：</strong>将抽象的“风格”拆解为可配置的辅件变量（如现代简约的几何地毯、意式轻奢的金属灯具等）。</li>
-                            <li><strong>数据资产规模化繁衍：</strong>通过 核心锚点 × 风格变量 的矩阵式配置公式，成功将单一商品繁衍为 100+ 套即插即用的 AI 组合库。确保 AI 在自动布局时，既能保证空间美学，又能精准拉动客户指定商品的曝光与落地。</li>
+                            <li>
+                                <strong>1. 输入阶段：确立商业锚点（将 SKU 视为数据常量）</strong>
+                                <ul className="list-circle pl-5 mt-2 space-y-2">
+                                    <li><strong>核心动作：</strong> 接收 B 端客户（如欧派）指定的具体实体商品 SKU，如指定的沙发、餐桌/椅子、床架和书桌。</li>
+                                    <li><strong>产品思维提炼：</strong> 工作的第一步不是盲目设计，而是确立“商业锚点”。在后续的 AI 场景生成中，这些特定的商品被设定为绝对不可更改的<strong>“数据常量”</strong>。</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>2. 流程阶段：定义拼搭逻辑（引入户型与风格变量）</strong>
+                                <ul className="list-circle pl-5 mt-2 space-y-2">
+                                    <li><strong>核心动作：</strong> 围绕指定的 SKU 锚点，通过海量辅件的精准搭配，建立起适配不同物理空间和美学诉求的搭配模型组合。</li>
+                                    <li><strong>变量矩阵设计：</strong> 引入了两个维度的核心变量进行网格化交叉：空间维度（大、中、小户型）与美学维度（现代简约、轻奢意式、新中式等）。</li>
+                                    <li><strong>底层公式构建：</strong> 提炼出了一套可规模化复用的算法逻辑公式：<strong>核心标品SKU × N种户型参数 × N种风格变量 = N套AI场景组合资产</strong>。</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>3. 输出阶段：交付规模化场景资产库</strong>
+                                <ul className="list-circle pl-5 mt-2 space-y-2">
+                                    <li><strong>核心动作：</strong> 最终向前端大模型/业务端交付适配大中小户型的规模化场景资产库。</li>
+                                    <li><strong>成果展现：</strong> 建立了“沙发组合库”、“餐桌组合库”、“床架与书桌组合库”等模块。真正实现了 <strong>“1 SKU × N 种场景”</strong> 的繁衍效果。</li>
+                                    <li><strong>业务价值：</strong> 最终产出了 100+ 套高可用的场景组合矩阵。例如，同一个沙发锚点，能自动且精准地衍生出现代简约（小户型）、意式轻奢（中户型）和新中式（大户型）等截然不同的高质量商业渲染结果。</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -473,25 +493,23 @@ export const projects: Project[] = [
         id: "3",
         slug: "ai-streetscape-analysis",
         title: "AI Streetscape Analysis",
-        title_zh: "AI 街景分析",
+        title_zh: "基于多源空间数据与 AI 街景语义分割的健康街道量化评估与导则设计",
         summary:
             "Computer Vision applications for analyzing urban street quality and walkability.",
         summary_zh: "计算机视觉在分析城市街道质量和步行友好度中的应用。",
         fullDescription: (
             <div className="space-y-8 mt-2">
-                <p className="text-lg text-serene-dark/90 font-medium leading-relaxed">
-                    This project applies Computer Vision techniques to analyze urban street quality and walkability. By processing thousands of street-view images, we assess factors like greenery, pavement quality, and building aesthetics. The goal is to provide data-driven recommendations for improving urban walkability and livability.
-                </p>
-
                 <div className="grid gap-6">
                     {/* Situation */}
                     <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
                         <div className="flex flex-wrap items-center gap-3 mb-4">
                             <span className="bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Situation</span>
-                            <h4 className="font-bold text-serene-dark text-lg">Context & Background</h4>
+                            <h4 className="font-bold text-serene-dark text-lg">Context & Pain Points</h4>
                         </div>
                         <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
-                            <li><strong>Background:</strong> [Insert background context here]</li>
+                            <li><strong>Macro Background:</strong> As China's urban development transitions from incremental expansion to stock renewal, the micro-renewal of old urban areas has become key to high-quality urban development. Concurrently, the national "14th Five-Year Plan" explicitly states that urban construction must shift from "object-oriented" to "people-centered and health-oriented".</li>
+                            <li><strong>Business Pain Points:</strong> Constrained by its complex historical evolution, Guangzhou's old urban areas face severe health and spatial supply challenges, such as aging infrastructure, severe functional decline, and traffic congestion. Considering that rail transit accounts for over 44% of Guangzhou's public transit passenger flow, and "walking" is the core way for residents in old urban areas to connect to the subway, the deterioration of the walking environment directly impacts urban operational efficiency.</li>
+                            <li><strong>Research Anchor:</strong> Introducing the cutting-edge concept of "Healthy Streets", focusing on three core obstacles to walking: traffic noise, air pollution, and lack of a convenient walking environment. Since traditional urban micro-renewal research heavily relies on subjective questionnaires and lacks objective data support, this project broke the traditional black box to introduce multi-source objective data for precise quantitative diagnosis of micro-spaces within a 10-minute walking radius (approx. 500 meters) around core subway stations.</li>
                         </ul>
                     </div>
 
@@ -501,50 +519,145 @@ export const projects: Project[] = [
                             <span className="bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Task</span>
                             <h4 className="font-bold text-serene-dark text-lg">Objectives</h4>
                         </div>
-                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
-                            <li><strong>Objectives:</strong> [Insert key objectives here]</li>
-                        </ul>
+                        <p className="text-serene-dark/80 leading-relaxed mb-4">
+                            My core task was to build a complete <strong>"Spatial Data Quantitative & Evaluation Pipeline"</strong> from scratch. Based on GIS analysis of urban land use, population density, and road network density, I scientifically selected three core subway stations in Yuexiu District (Caihongqiao, Ouzhuang, and Yangji) as benchmark subjects. I connected the entire process from "large-scale spatial data sampling" to "deep learning streetscape pixel-level analysis", and finally to "mathematical model objective weighting & road network calculation". The ultimate goal was to accurately diagnose the street health index and precipitate scalable spatial optimization guidelines.
+                        </p>
+
+                        {/* 🖼️ 【图片插入位置 1：评价体系思维导图】 */}
+                        <div className="my-6">
+                            <img
+                                src={encodeURI("/project/yuyifenge/评价体系.jpg")}
+                                alt="Evaluation System Mind Map"
+                                className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                            />
+                        </div>
                     </div>
 
                     {/* Action */}
                     <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
                         <div className="flex flex-wrap items-center gap-3 mb-4">
                             <span className="bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Action</span>
-                            <h4 className="font-bold text-serene-dark text-lg">Strategy & Execution</h4>
+                            <h4 className="font-bold text-serene-dark text-lg">Data Mining & Business Guidelines Formulation</h4>
                         </div>
-                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80 leading-relaxed">
-                            <li><strong>Execution:</strong> [Insert action and execution details here]</li>
-                        </ul>
+
+                        <div className="space-y-6">
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">ArcGIS-Based Spatial Sampling & Big Data Calculation:</h5>
+                                <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed mb-4">
+                                    <li>Used Baidu Maps coordinate picking system to accurately obtain viewpoint coordinates, imported them into ArcGIS for spatial data visualization, and scientifically defined 68 streetscape collection points (covering mid-blocks and key intersections).</li>
+                                    <li>Deeply utilized acquired POI data to perform Kernel Density Analysis in ArcGIS, scientifically defining and narrowing the research scope.</li>
+                                    <li>Established a 1500m spatial buffer in ArcGIS, innovatively introducing eight-quadrant division and shortest-path algorithms to accurately calculate the PRD (Pedestrian Route Directness) of each station, providing hardcore data support for objectively evaluating subway spatial accessibility.</li>
+                                </ul>
+                                {/* 🖼️ 【图片插入位置 2：研究地点选择gis截图】 */}
+                                <div className="mt-4 mb-6">
+                                    <img
+                                        src="/project/yuyifenge/位置选取.png"
+                                        alt="Study Area Selection GIS Screenshot"
+                                        className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">Deploying MXnet & DeepLab V3 via Python for AI Street View Semantic Segmentation:</h5>
+                                <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed mb-4">
+                                    <li>Independently configured underlying virtual environments using Anaconda, successfully deployed the MXnet deep learning framework, and efficiently executed core processing code within the PyCharm IDE.</li>
+                                    <li>Successfully invoked the DeepLab V3 semantic segmentation model (pre-trained on the Cityscapes dataset) to perform size reconstruction and pixel-level computer vision recognition on a bulk batch of 68 Baidu panoramic street view images.</li>
+                                    <li>Visualized 20 key street elements (vehicle lanes, sidewalks, buildings, plants, etc.) through color-block overlays with 0.8 opacity. Independently wrote functions to automatically extract pixel proportions for each element and export structured CSV data, successfully achieving a "dimensionality reduction" by transforming unstructured images into core quantitative metrics like Green View Index and Sky View Factor.</li>
+                                </ul>
+                                {/* 🖼️ 【新增：视点选择图片】 */}
+                                <div className="mt-4 mb-6">
+                                    <img
+                                        src="/project/yuyifenge/视点选取示意.png"
+                                        alt="Viewpoint Selection Screenshot"
+                                        className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                                    />
+                                </div>
+
+                                {/* 🖼️ 【图片插入位置 3：语义分析过程截图】 */}
+                                <div className="mt-4 mb-6">
+                                    <img
+                                        src="/project/yuyifenge/分割截图.png"
+                                        alt="Semantic Analysis Process Screenshot"
+                                        className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">Data Modeling and Correlation Mining based on Entropy Weight Method and SPSS:</h5>
+                                <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed mb-4">
+                                    <li>Built a rigorous evaluation sample matrix, introduced the "Entropy Weight Method" to normalize and translate positive and negative spatial indicators (+0.01 to eliminate invalid data interference). By calculating information entropy redundancy, completely abandoned traditional subjective manual scoring, and accurately derived the absolute objective weight of each evaluation factor.</li>
+                                    <li>Proficiently used SPSS statistical software to conduct in-depth bivariate correlation analysis between calculated PRD values and road network morphology evaluation indicators such as block edge length and intersection density, successfully exploring and confirming the deep mathematical laws behind road network textures.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Result */}
                     <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
                         <div className="flex flex-wrap items-center gap-3 mb-4">
                             <span className="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Result</span>
-                            <h4 className="font-bold text-serene-dark text-lg">Outcomes</h4>
+                            <h4 className="font-bold text-serene-dark text-lg">Data-Driven Business Value & Iteration</h4>
                         </div>
-                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
-                            <li><strong>Outcomes:</strong> [Insert outcomes here]</li>
-                        </ul>
+
+                        <div className="space-y-6">
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">Complete Data Model Validation & Precise Attribution:</h5>
+                                <p className="text-serene-dark/80 leading-relaxed mb-4">
+                                    Cross-compared the calculated health index scores with the actual built environments around Yangji, Ouzhuang, and Caihongqiao stations. The ground truth of high and low-scoring road segments highly aligned with the model's deductions, successfully verifying the scientific validity and business universality of this quantitative evaluation system.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">Achieve Business Strategy Closed Loop & Value Delivery:</h5>
+                                <p className="text-serene-dark/80 leading-relaxed mb-4">
+                                    The design guidelines produced based on data insights effectively filled the industry gap in quantitative micro-renewal of healthy streets in Guangzhou's old urban areas. The solution not only implemented physical micro-renewal strategies but also deeply integrated historical and cultural heritage and community vitality into the spatial design, providing a data-driven decision model with extremely high commercial value for the stock renewal of old urban areas.
+                                </p>
+                                {/* 🖼️ 【图片插入位置 5：设计导则截图】 */}
+                                <div className="mt-4 mb-6">
+                                    <img
+                                        src={encodeURI("/project/yuyifenge/设计导则.png")}
+                                        alt="Design Guideline Screenshot"
+                                        className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">PM Deep Review & Long-term Iteration Planning:</h5>
+                                <p className="text-serene-dark/80 leading-relaxed mb-4">
+                                    During the project closeout review, keenly pointed out the current temporal limitations of combining qualitative and quantitative indicators. Forward-looking planning was made for the iteration direction of introducing dynamic time-series data such as dynamic pedestrian flow and real-time air quality index in the future; meanwhile, the core strategic significance of cross-disciplinary alignment (traffic engineering, public health) and the establishment of a long-term tracking automated evaluation mechanism was clarified.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 🖼️ 【新增：项目展板（脱离白色板块）】 */}
+                    <div className="pt-8 mt-8 border-t border-serene-dark/5">
+                        <h3 className="text-2xl font-bold text-serene-dark mb-6 text-center">Project Board</h3>
+                        <img
+                            src={encodeURI("/project/yuyifenge/项目展板.jpg")}
+                            alt="Project Board"
+                            className="w-full rounded-2xl shadow-sm border border-serene-dark/10 object-cover"
+                        />
                     </div>
                 </div>
             </div>
         ),
         fullDescription_zh: (
             <div className="space-y-8 mt-2">
-                <p className="text-lg text-serene-dark/90 font-medium leading-relaxed">
-                    本项目应用计算机视觉技术来分析城市街道质量和步行友好度。通过处理成千上万的街景图像，我们评估绿化、路面质量和建筑美学等因素。目标是为改善城市步行友好度和宜居性提供数据驱动的建议。
-                </p>
-
                 <div className="grid gap-6">
                     {/* Situation */}
                     <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
                         <div className="flex flex-wrap items-center gap-3 mb-4">
                             <span className="bg-blue-100 text-blue-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Situation</span>
-                            <h4 className="font-bold text-serene-dark text-lg">情境与背景</h4>
+                            <h4 className="font-bold text-serene-dark text-lg">业务情境与痛点</h4>
                         </div>
                         <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
-                            <li><strong>背景：</strong> [在此处插入背景内容]</li>
+                            <li><strong>宏观背景：</strong> 随着我国城市发展从增量扩张全面转入存量更新阶段，老旧城区的微更新改造已成为城市高质量发展的关键。同时，国家“十四五”规划明确提出，城市建设需从“以物为本”向“以人民健康为中心”转型。</li>
+                            <li><strong>业务痛点：</strong> 广州老城区受制于复杂的历史沿革，正面临基础设施老化、功能严重衰退、交通流线拥堵等严峻的健康与空间供给挑战。考虑到轨道交通承担了广州超 44% 的公交客流，而“步行”是旧城区居民接驳地铁的最核心方式，步行环境的恶化直接影响了城市运转效率。</li>
+                            <li><strong>研究锚点：</strong> 引入“健康街道”前沿理念，锁定阻碍步行的三大核心障碍：交通噪音、空气污染和缺乏便利的步行环境。鉴于传统城市微更新调研高度依赖主观问卷，缺乏客观数据支撑，本项目亟需打破传统黑盒，引入多源客观数据，对核心地铁站周边 10 分钟步行辐射圈（约 500 米）的微空间进行精准的量化诊断。</li>
                         </ul>
                     </div>
 
@@ -552,46 +665,150 @@ export const projects: Project[] = [
                     <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
                         <div className="flex flex-wrap items-center gap-3 mb-4">
                             <span className="bg-purple-100 text-purple-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Task</span>
-                            <h4 className="font-bold text-serene-dark text-lg">任务与目标</h4>
+                            <h4 className="font-bold text-serene-dark text-lg">核心任务</h4>
                         </div>
-                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
-                            <li><strong>目标：</strong> [在此处插入任务目标内容]</li>
-                        </ul>
+                        <p className="text-serene-dark/80 leading-relaxed mb-4">
+                            我的核心任务是从 0 到 1 搭建一套完整的<strong>“空间数据量化与评估管道（Data Pipeline）”</strong>。基于 GIS 分析城市用地性质、人口密度与路网密度，科学筛选出越秀区的三个核心地铁站（彩虹桥站、区庄站、杨箕站）作为标杆研究对象。打通从“大规模空间数据采样”到“深度学习街景像素级解析”，再到“数学模型客观赋权与路网测算”的全链路，最终精准诊断街道健康指数，并沉淀出可规模化复用的空间优化导则。
+                        </p>
+
+                        {/* 🖼️ 【图片插入位置 1：评价体系思维导图】 */}
+                        <div className="my-6">
+                            <img
+                                src="/project/yuyifenge/评价体系.jpg"
+                                alt="评价体系思维导图"
+                                className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                            />
+                        </div>
                     </div>
 
                     {/* Action */}
                     <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
                         <div className="flex flex-wrap items-center gap-3 mb-4">
                             <span className="bg-amber-100 text-amber-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Action</span>
-                            <h4 className="font-bold text-serene-dark text-lg">行动与执行</h4>
+                            <h4 className="font-bold text-serene-dark text-lg">数据挖掘技术落地与业务导则制定</h4>
                         </div>
-                        <ul className="list-disc pl-5 space-y-3 text-serene-dark/80 leading-relaxed">
-                            <li><strong>执行：</strong> [在此处插入行动与执行内容]</li>
-                        </ul>
+
+                        <div className="space-y-6">
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">基于 ArcGIS 的空间采样与大数据测算：</h5>
+                                <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed mb-4">
+                                    <li>运用百度地图坐标拾取系统精准获取视点经纬度，并导入 ArcGIS 进行空间数据可视化，科学划定 68 个街景采集点位（全面涵盖路段中点与关键交叉口）。</li>
+                                    <li>深度利用获取的 POI 数据，在 ArcGIS 中执行核密度分析，科学划定并收敛调研对象范围。</li>
+                                    <li>在 ArcGIS 中建立 1500m 空间缓冲区，创新性引入八象限划分与最短路径算法，精准计算出各站点的 PRD（步行绕路系数），为客观评价地铁空间易达性提供硬核数据支撑。</li>
+                                </ul>
+                                {/* 🖼️ 【图片插入位置 2：研究地点选择gis截图】 */}
+                                <div className="mt-4 mb-6">
+                                    <img
+                                        src="/project/yuyifenge/位置选取.png"
+                                        alt="研究地点选择gis截图"
+                                        className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">运用 Python 部署 MXnet 与 DeepLab V3 实施 AI 街景语义分割：</h5>
+                                <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed mb-4">
+                                    <li>独立使用 Anaconda 配置底层虚拟环境并成功部署 MXnet 深度学习框架，在 PyCharm 编译器中高效执行底层处理代码。</li>
+                                    <li>成功调用基于 Cityscapes 数据集预训练的 DeepLab V3 顶尖语义分割模型，对批量获取的 68 张百度全景街景图像进行尺寸重构与像素级机器视觉识别。</li>
+                                    <li>将包含 20 类关键街道要素（机动车道、人行道、建筑、植物等）的图像进行 0.8 透明度的色块叠加可视化；并独立编写函数，实现各要素像素点占比的自动提取与 CSV 结构化数据导出，成功实现了将非结构化图像转化为绿视率、天空开敞度等核心量化指标的“降维打击”。</li>
+                                </ul>
+                                {/* 🖼️ 【新增：视点选择图片】 */}
+                                <div className="mt-4 mb-6">
+                                    <img
+                                        src="/project/yuyifenge/视点选取示意.png"
+                                        alt="视点选择图片"
+                                        className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                                    />
+                                </div>
+
+                                {/* 🖼️ 【图片插入位置 3：语义分析过程截图】 */}
+                                <div className="mt-4 mb-6">
+                                    <img
+                                        src="/project/yuyifenge/分割截图.png"
+                                        alt="语义分析过程截图"
+                                        className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">基于熵权法与 SPSS 的数据建模与相关性挖掘：</h5>
+                                <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed mb-4">
+                                    <li>构建严密的评估样本矩阵，引入“熵权法”对正逆向空间指标进行归一化和平移处理（+0.01 消除无效数据干扰）。通过计算信息熵冗余度，彻底摒弃传统的人工主观打分，精准推导出各项评价因子的绝对客观权重。</li>
+                                    <li>熟练运用 SPSS 统计分析软件，将测算出的 PRD 组值与街区边长、交叉口密度等路网形态评价指标进行双变量相关性深度分析，成功探寻并证实了路网肌理背后的深层数理规律。</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Result */}
                     <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl border border-serene-dark/10 shadow-sm transition-all hover:shadow-md hover:bg-white/80">
                         <div className="flex flex-wrap items-center gap-3 mb-4">
                             <span className="bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full text-sm tracking-wide shadow-sm">Result</span>
-                            <h4 className="font-bold text-serene-dark text-lg">结果与成效</h4>
+                            <h4 className="font-bold text-serene-dark text-lg">数据驱动的业务价值与复盘迭代</h4>
                         </div>
-                        <ul className="list-disc pl-5 space-y-2 text-serene-dark/80 leading-relaxed">
-                            <li><strong>成效：</strong> [在此处插入结果与成效内容]</li>
-                        </ul>
+
+                        <div className="space-y-6">
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">完成数据模型验证与精准归因：</h5>
+                                <p className="text-serene-dark/80 leading-relaxed mb-4">
+                                    将计算得出的健康指数量化评分，与杨箕、区庄、彩虹桥站周边的实际建成环境进行交叉比对。高低分路段的实况与模型推演结果高度一致，成功验证了该量化评价体系的科学性与业务普适性。
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">实现业务策略闭环与价值交付：</h5>
+                                <p className="text-serene-dark/80 leading-relaxed mb-4">
+                                    基于数据洞察产出的设计导则，有效填补了广州老城区健康街道量化更新的行业空白。方案不仅落地了物理层面的微更新策略，更将历史文化传承与社区活力激发深度融入空间设计，为老城区存量更新提供了一套具备极高商业价值的数据决策模型。
+                                </p>
+                                {/* 🖼️ 【图片插入位置 5：设计导则截图】 */}
+                                <div className="mt-4 mb-6">
+                                    <img
+                                        src={encodeURI("/project/yuyifenge/设计导则.png")}
+                                        alt="设计导则截图"
+                                        className="w-full rounded-xl shadow-md border border-gray-100 object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-serene-dark/90 mb-2">PM 深度复盘与长效迭代规划：</h5>
+                                <p className="text-serene-dark/80 leading-relaxed mb-4">
+                                    在项目结项复盘中，敏锐指出当前定性与定量指标结合存在的时效局限性。前瞻性地规划了未来引入动态步行流量、实时空气质量指数等动态时序数据的迭代方向；同时明确了跨学科拉通（交通工程、公共卫生）以及建立长效追踪自动化评估机制的核心战略意义。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* 🖼️ 【新增：项目展板（脱离白色板块）】 */}
+                    <div className="pt-8 mt-8 border-t border-serene-dark/5">
+                        <h3 className="text-2xl font-bold text-serene-dark mb-6 text-center">项目展板</h3>
+                        <img
+                            src={encodeURI("/project/yuyifenge/项目展板.jpg")}
+                            alt="项目展板截图"
+                            className="w-full rounded-2xl shadow-sm border border-serene-dark/10 object-cover"
+                        />
                     </div>
                 </div>
             </div>
         ),
         tags: ["Computer Vision", "Urban Analysis"],
         coverImage:
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuAdtEVKu4Vz4mgtIFga_9O0cDYYMP8JaUBCIWjCgjz04LtsG8QEJHhDSqPEAg8LYczGqzyOebrNkr84l7mWxsLHVqVXtX6WzzjuxzYqLIPfRp7rRc6sZQJpp5hSxwenxpjnq5zwnlYi9GIweYqDSpssbh8DQFDo_9RkHjkg84I9hjLOY4b5kCr7G9FKb6xFynKTjyrCbqYzjM0Z3xai4T_WpSkiAYbyyHoQzezZWM2bsWPJ6bWqPh3UuOIXJtBkrj5PgLHLAceNIxUv",
+            encodeURI("/project/yuyifenge/项目展板.jpg"),
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuAdtEVKu4Vz4mgtIFga_9O0cDYYMP8JaUBCIWjCgjz04LtsG8QEJHhDSqPEAg8LYczGqzyOebrNkr84l7mWxsLHVqVXtX6WzzjuxzYqLIPfRp7rRc6sZQJpp5hSxwenxpjnq5zwnlYi9GIweYqDSpssbh8DQFDo_9RkHjkg84I9hjLOY4b5kCr7G9FKb6xFynKTjyrCbqYzjM0Z3xai4T_WpSkiAYbyyHoQzezZWM2bsWPJ6bWqPh3UuOIXJtBkrj5PgLHLAceNIxUv",
+            encodeURI("/project/yuyifenge/项目展板.jpg"),
         ],
-        year: "2024",
-        role: "Lead Designer",
-        role_zh: "首席设计师",
-        tools: ["PyTorch", "OpenCV", "Stable Diffusion"],
+        year: "2024（2025年修改并收录于中国城市规划年会）",
+        role: "Urban Design, Data Processing, Theoretical Research",
+        role_zh: "城市设计, 数据处理, 理论调研",
+        tools: ["Excel", "熵权法模型", "ArcGIS", "Python (PyCharm, Anaconda)", "MXnet", "DeepLab V3", "SPSS"],
+        links: [
+            {
+                title: "Project Research Paper",
+                title_zh: "项目研究论文",
+                url: "/project/yuyifenge/06-论文：健康街道视角下步行街道质量评估与提升——以广州越秀区地铁站周围人居空间为例.pdf",
+            },
+        ],
     },
 ];

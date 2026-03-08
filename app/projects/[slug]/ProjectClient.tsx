@@ -72,7 +72,7 @@ export default function ProjectClient({ project }: { project: Project }) {
                             </div>
                         )}
                     </div>
-                    <div className="relative z-10 max-w-7xl mx-auto px-6 pb-20 w-full text-serene-cream">
+                    <div className="relative z-10 max-w-7xl mx-auto px-6 pb-12 md:pb-20 w-full text-serene-cream">
                         <Link
                             href="/#work"
                             className="inline-flex items-center gap-2 text-serene-sage hover:text-white transition-colors uppercase tracking-widest text-sm mb-6"
@@ -82,17 +82,17 @@ export default function ProjectClient({ project }: { project: Project }) {
                             </span>
                             {t.back}
                         </Link>
-                        <h1 className="font-display text-5xl md:text-7xl mb-4">
+                        <h1 className="font-display text-4xl sm:text-5xl md:text-7xl mb-4">
                             {language === 'zh' ? project.title_zh : project.title}
                         </h1>
-                        <p className="font-heading text-xl md:text-2xl text-serene-sage max-w-2xl">
+                        <p className="font-heading text-lg md:text-xl lg:text-2xl text-serene-sage max-w-2xl">
                             {language === 'zh' ? project.summary_zh : project.summary}
                         </p>
                     </div>
                 </section>
 
                 {/* Content Section */}
-                <section className="max-w-5xl mx-auto px-6 py-24">
+                <section className="max-w-5xl mx-auto px-6 py-12 md:py-24">
                     {/* Meta Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-serene-dark/10 pb-16 mb-16">
                         <div>
@@ -129,7 +129,7 @@ export default function ProjectClient({ project }: { project: Project }) {
                     </div>
 
                     {/* Main Content */}
-                    <div className="prose prose-lg text-serene-dark/80 font-body max-w-none mb-24 text-lg">
+                    <div className="prose md:prose-lg text-base md:text-lg text-serene-dark/80 font-body max-w-none mb-12 md:mb-24">
                         <div className="whitespace-pre-line leading-relaxed">
                             {language === 'zh' ? project.fullDescription_zh : project.fullDescription}
                         </div>
@@ -160,7 +160,7 @@ export default function ProjectClient({ project }: { project: Project }) {
                         </div>
                     )}
 
-                    <div className="mt-32 text-center">
+                    <div className="mt-16 md:mt-32 text-center">
                         <Link
                             href="/#work"
                             className="inline-block px-10 py-4 border border-serene-dark text-serene-dark font-display text-sm uppercase tracking-[0.2em] hover:bg-serene-dark hover:text-serene-cream transition-all duration-300"

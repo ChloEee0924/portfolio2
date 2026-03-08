@@ -21,7 +21,7 @@ export default function Footer() {
 
     return (
         <footer
-            className="bg-serene-dark text-serene-cream py-24 relative overflow-hidden"
+            className="bg-serene-dark text-serene-cream py-16 md:py-24 relative overflow-hidden"
             id="contact"
         >
             <div
@@ -32,10 +32,10 @@ export default function Footer() {
                 }}
             ></div>
             <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center relative z-10">
-                <h2 className="font-display text-5xl md:text-7xl mb-8 tracking-tight">
+                <h2 className="font-display text-4xl sm:text-5xl md:text-7xl mb-8 tracking-tight">
                     {t.title}
                 </h2>
-                <p className="font-heading text-xl text-serene-sage mb-12 italic max-w-2xl">
+                <p className="font-heading text-lg md:text-xl text-serene-sage mb-12 italic max-w-2xl">
                     {t.subtitle}
                 </p>
                 <button
@@ -44,7 +44,7 @@ export default function Footer() {
                 >
                     2361521894@qq.com
                 </button>
-                <div className="flex gap-8 mb-16">
+                <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-12 md:mb-16">
                     <button
                         onClick={() => setShowWeChat(true)}
                         className="text-serene-sage hover:text-white transition-colors uppercase text-sm tracking-widest cursor-pointer"
